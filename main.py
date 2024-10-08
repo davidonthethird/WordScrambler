@@ -2,8 +2,9 @@ import random
 import tkinter as tk
 import sqlite3
 from datetime import datetime
-from pathlib import Path
 
+
+# Scrambles characters you input and allows you to save them to a SQL database
 
 def scramble():
     # Shuffle all characters in word
@@ -15,7 +16,6 @@ def scramble():
 
 def keep_word():
     #Saves word into DB
-
     #Get word and shuffled word
     word = entry.get()
     scrambled = label_scrambled.cget('text')
